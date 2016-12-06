@@ -8,10 +8,7 @@ setup(
     author_email = "taylormutch@gmail.com",
     description = ("A collection of utilities for working with SODAR data."),
     keywords = "sodar",
-    url = "https://github.com/TaylorMutch/sodarutils.git",
-    packages=['numpy', 'matplotlib'],
-    classifiers=[
-        "Development Status :: 3 - Alpha",
-        "Topic :: Utilities"
-    ],
+    url = "https://github.com/TaylorMutch/sodarutils",
+    packages=['sodarutils'],
+    classifiers=[],
 )
