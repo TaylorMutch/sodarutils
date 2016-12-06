@@ -4,10 +4,19 @@ A collection of utilities for working with SODAR data.
 ## Code Example
 ```python
 from sodarutils.collections import SodarCollection, SODAR_FIELDS
-sdrs = SodarCollection('data\McRae')   # builds the collection
-SODAR_FIELDS    # available fields accessible
+
+# builds the collection
+sdrs = SodarCollection('data\McRae')
+
+# available fields accessible
+SODAR_FIELDS
 {"speed": 0,"direction": 1}
-data, metadata = sdrs.night_array('speed')   # returns a list of 2D 'speed' data and a dictionary describing the metadata.
+
+# returns a list of 2D 'speed' data and a dictionary describing the metadata.
+data, metadata = sdrs.night_array('speed')
+
+# A 2D array, where each row is a column of wind speeds starting at 15 meters with 10 meter increments. 
+data[0]
 ```
 
 ## Motivation
@@ -17,7 +26,10 @@ We needed a simple interface for working the the disparate data sources provided
 `pip install git+https://github.com/TaylorMutch/sodarutils.git`
 
 ## Contributors
+
 @TaylorMutch
+
 @PeterDrake
+
 Jenny Orr
 
